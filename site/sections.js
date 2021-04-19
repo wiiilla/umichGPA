@@ -601,7 +601,7 @@ let lastIndex, activeIndex = 0
 scroll.on('active', function(index){
     d3.selectAll('.step')
         .transition().duration(500)
-        .style('opacity', function (d, i) {return i === index ? 1 : 0.1;});
+        .style('opacity', function (d, i) {return i === index ? 1 : 0;});
     
     activeIndex = index
     let sign = (activeIndex - lastIndex) < 0 ? -1 : 1; 

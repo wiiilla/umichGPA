@@ -16,75 +16,56 @@
 
 
 <body>
-    <div id="vis">
-    </div>
-
     <div id="graphic">
         <div id="sections">
             <section class="step">
                 <div class="title"></div>
                 <br><br>
-                <h1>How hard is my umich major?</h1>
-                <h2>If you're wondering, scroll down.</h2>
+                <h1>How hard is the umich curriculum?</h1>
                 <p>By <a href='https://www.linkedin.com/in/willa-hua/'>Willa Hua</a></p>
+                <h3>As a University of Michigan student, it's often natural to wonder how the difficulty of courses differ among the schools. If you're curious, scroll down.</h3>
                 <p></p>
             </section>
 
             <section class="step">
                 <br><br><br><br><br><br>
-                <h2>There're a lot of courses at the University of Michigan.</h2>
+                <h2>Lots of courses at the University of Michigan.</h2>
                 <p>
-                    All courses bubble
+                    And it's hard to make sense of them. With the help of <a href='https://atlas.ai.umich.edu/'>Atlas</a>, a data display tool about the U-M curriculum, students can easily look up individual courses.
                 </p>
+                <p>
+                    But how about the aggregates? On the left is all the courses administered from the winter of 2016 to the fall of 2018, in popular subjects. Each circle is course, sized by how many students took it. Overwhelming, right?
+                </p>
+
+
             </section>
 
             <section class='step'>
-                <br><br><br><br><br><br>
-                <h2>Here we have data of.</h2>
+                <br><br><br><br><br><br><br><br><br>
+                <h2>We can make sense of it by coloring them by schools.</h2>
                 <p>
-                    Bubbles clustered by school
-                </p>
-            </section>
-
-            <section class="step">
-                <br><br><br><br><br><br>
-                <p>
-                    GPA by School
+                    Mouseover each dot to read what course it represents.
                 </p>
                 <svg id='legend_school' width='400px' height='500px'></svg>
             </section>
 
-            <section class="step">
-                <br><br><br><br><br><br>
-                <h2>And you are</h2>
+            <section class='step'>
+                <h2>And put average GPA on the X-axis.</h2>
                 <p>
-                    Highlight one school
+                    Clearly, the popular Engineering school and LSA is stricter with grading. The School of Eduction, on the other hand, has an average GPA of 3.87. Contrary to popular belief, the Art School and Architecture School is quite demanding. Below is a wholistic
+                    list of average GPA among schools, and you can explore the easier and most difficult classes by hovering over them.
                 </p>
+                <svg id='legend_school_gpa' width='400px' height='300px'></svg>
+                <p>Data courtesy: the Michigan Daily Grade Guide. Special thanks: <a href='https://towardsdatascience.com/how-i-created-an-interactive-scrolling-visualisation-with-d3-js-and-how-you-can-too-e116372e2c73'>Cuthbert Chow</a></p>
             </section>
 
-            </section>
-            <section class="step">
-                <br><br><br><br><br><br>
-                <h2>...</h2>
-                <p>
-                    Breakdown deparments
-                </p>
-                <svg id='legend_department' width='400px' height='450px'></svg>
-            </section>
-
-            <section class="step">
-                <br><br><br><br><br><br>
-                <h2>In the [department] [major]</h2>
-                <p>
-                    Breakdown deparments
-                </p>
-            </section>
+            <div id="vis"></div>
 
         </div>
+
     </div>
 
-    <!-- <script src='scroller.js'></script>
-    <script src='sections.js'></script> -->
+    <script src='scroller.js'></script>
     <script src='viz.js'></script>
 </body>
 

@@ -40,7 +40,6 @@ function scroller(){
         let pos = window.pageYOffset - 300 - containerStart;
         let sectionIndex = d3.bisect(sectionPositions, pos);
         sectionIndex = Math.min(sections.size()-1, sectionIndex);
-    
         if (currentIndex !== sectionIndex){
             dispatch.call('active', this, sectionIndex);
             currentIndex = sectionIndex;
